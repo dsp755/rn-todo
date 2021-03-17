@@ -1,0 +1,35 @@
+export const THEME = {
+  MAIN_COLOR: '#272D2D',
+  MAIN_COLOR_TRANSPARENT_LOW: '#272D2D99',
+  MAIN_COLOR_TRANSPARENT_HIGH: '#272D2D66',
+  RED_COLOR_TRANSPARENT_LOW: '#C4202199',
+  RED_COLOR_TRANSPARENT_HIGH: '#C4202166',
+  MARGIN_HORIZONTAL: 14,
+  BUTTON: {
+    width: 100,
+    height: 40,
+    borderRadius: 6,
+    backgroundColor: '#272D2D66',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginHorizontal: 15,
+    shadowColor: '#000',
+    shadowOffset: { width: 2, height: 2 },
+    shadowOpacity: 0.6,
+    elevation: 8
+  },
+  BUTTONS: {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 50,
+  },
+  INPUT: {
+    width: '75%',
+    fontSize: 20,
+    borderStyle: 'solid',
+    borderColor: '#272D2D',
+    borderBottomWidth: 1,
+  },
+}
