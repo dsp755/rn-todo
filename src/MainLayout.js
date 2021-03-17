@@ -11,14 +11,14 @@ import { THEME } from './styles/theme'
 
 export const MainLayout = () => {
 
-  const { id } = useContext(ScreenContext)
+  const { todoId } = useContext(ScreenContext)
 
   return (
     <ImageBackground source={require('../assets/images/background.jpg')} style={styles.image}>
       <StatusBar style="light" />
       <NavBar />
       <View style={styles.container}>
-        { id ? <TodoScreen /> : <MainScreen />}
+        { todoId ? <TodoScreen /> : <MainScreen />}
       </View>
     </ImageBackground>
   )

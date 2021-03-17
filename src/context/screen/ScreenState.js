@@ -8,13 +8,13 @@ export const ScreenState = ({children}) => {
 
   const [state, dispatch] = useReducer(screenReducer, null)
 
-  const setId = id => dispatch({type: SET_ID, id})
+  const setId = todoId => dispatch({type: SET_ID, todoId})
 
   return(
     <ScreenContext.Provider 
       value={{
         setId,
-        id: state
+        todoId: state
       }}
     >
       {children}

@@ -1,7 +1,7 @@
 import { SET_ID } from '../types'
 
 const handlers = {
-  [SET_ID]: (state, action) => action.id,
+  [SET_ID]: (state, action) => action.todoId,
   DEFAULT: state => state
 }
 

@@ -10,15 +10,15 @@ import { ScreenContext } from "../context/screen/ScreenState";
 export const TodoScreen = () => {
 
   const { todos, updateTodo, removeTodo } = useContext(TodoContext)
-  const { id, setId } = useContext(ScreenContext)
+  const { todoId, setId } = useContext(ScreenContext)
 
   const [modalVisible, setModalVisible] = useState(false);
 
-  let selectedTodo = todos.find(todo => todo.id == id)
+  let selectedTodo = todos.find(todo => todo.id == todoId)
 
   const saveHandler = title => {
     setModalVisible(!modalVisible)
-    updateTodo(id, title)
+    updateTodo(todoId, title)
   }
 
   return (
